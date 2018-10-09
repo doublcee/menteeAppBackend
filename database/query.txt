@@ -1,0 +1,2 @@
+alter table reports add constraint fk_repByUser foreign key(repBy) references users(id) on update cascade on delete cascade
+alter table reports add constraint fk_repToUser foreign key(repTo) references users(id) on update cascade on delete cascade
